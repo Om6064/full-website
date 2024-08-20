@@ -1,0 +1,36 @@
+.header {
+    background-image: url("https://bootstrapmade.com/demo/templates/Append/assets/img/hero-bg.jpg");
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.header:before {
+    content: "";
+    background-color: #06060683;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+}
+.p-t-200{
+    padding-top: 400px !important;
+}
+.p-l-10{
+    padding-left: -200px;
+}
+.font-44{
+    font-size: 44px;
+}
+.text{
+    border:  none !important;
+    outline: none !important;
+}
+.button{
+  right: 170px;
+  top: 10px;
+}
+.white-space{
+    white-space: nowrap;
+}
