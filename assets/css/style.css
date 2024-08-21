@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    font-family: "Open Sans", sans-serif;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.mont {
+    font-family: "Montserrat", sans-serif !important;
+}
+
 .header {
     background-image: url("https://bootstrapmade.com/demo/templates/Append/assets/img/hero-bg.jpg");
     position: relative;
@@ -14,23 +32,142 @@
     position: absolute;
     z-index: 2;
 }
-.p-t-200{
+
+.p-t-400 {
     padding-top: 400px !important;
 }
-.p-l-10{
+
+.p-l-10 {
     padding-left: -200px;
 }
-.font-44{
+
+.font-44 {
     font-size: 44px;
 }
-.text{
-    border:  none !important;
+
+.text {
+    border: none !important;
     outline: none !important;
 }
-.button{
-  right: 170px;
-  top: 10px;
+
+.button {
+    right: 170px;
+    top: 10px;
 }
-.white-space{
+
+.white-space {
     white-space: nowrap;
+}
+
+.about {
+    background-color: #f8efef;
+    width: 115px;
+    height: 40px;
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
+.bgcolor {
+    background-color: #f9f9f9;
+    /* height: 100vh; */
+}
+
+.read {
+    width: 170px;
+    height: 50px;
+    letter-spacing: 2px;
+}
+
+.arr {
+    transition: .2s all linear;
+}
+
+.read:hover {
+    opacity: .7;
+}
+
+.read:hover .arr {
+    transform: translateX(10px);
+}
+
+.icon {
+    background-color: #fef5f5;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.border-redi {
+    border-radius: 10px;
+}
+
+.hover {
+    transition: .2s all linear;
+}
+
+.card-1:hover .hover {
+    background-color: red !important;
+}
+
+.card-1:hover .hover1 {
+    color: white !important;
+}
+
+.p-t-300 {
+    padding-top: 300px;
+}
+
+.color80 {
+    color: #ffffff80;
+}
+
+.color80:hover {
+    color: #fff;
+}
+
+.bred {
+    background-image: url("https://bootstrapmade.com/demo/templates/Append/assets/img/hero-bg.jpg");
+    padding: 100px;
+    position: relative;
+}
+
+.bred:before {
+    content: "";
+    background-color: #06060683;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    background-color: #fff;
+    visibility: hidden;
+    width: 300px;
+    -webkit-transition: 0.2s all linear;
+    -o-transition: 0.2s all linear;
+    transition: 0.2s all linear;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item:hover .portfolio-info {
+    bottom: 30px;
+    visibility: visible;
+}
+.link{
+    width: 60px;
+}
+.m-b-15{
+    margin-bottom: 15px;
 }
