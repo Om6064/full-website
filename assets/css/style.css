@@ -131,6 +131,7 @@ h6,
     background-image: url("https://bootstrapmade.com/demo/templates/Append/assets/img/hero-bg.jpg");
     padding: 100px;
     position: relative;
+    
 }
 
 .bred:before {
@@ -169,7 +170,10 @@ h6,
     width: 60px;
 }
 .m-b-15{
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
+}
+.m-b-70{
+    margin-bottom: 70px;
 }
 .testimonial-img{
     height: 90px !important;
@@ -181,4 +185,52 @@ h6,
 }
 .bi-quote{
     color: pink;
+}
+.blog-img{
+    height: 50px;
+    width: 50px;
+}
+.m-b-5{
+    margin-bottom: 5px !important;
+}
+.decono{
+    text-decoration: none !important;
+}
+.font-20{
+    font-size: 20px !important;
+}
+.colorf6{
+    background-color:#f6f6f7 ;
+}
+.font-30{
+    font-size: 30px;
+}
+.circle{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #bfc0c1;
+    border-radius: 50%;
+    transition: .2s all linear;
+    cursor: pointer;
+}
+.circle:hover{
+    border-color: red;
+}
+.circle:hover .hover{
+    color: red !important;
+}
+.hover{
+    transition: .2s all linear;
+}
+.hover1:hover{
+    color: red !important;
+}
+.hover1{
+    cursor: pointer;
+}
+.font-38{
+    font-size: 38px;
+}
+.colorb{
+    background-color: #f6f6f7;
 }
