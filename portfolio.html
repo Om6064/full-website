@@ -1,194 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css ">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css ">
 </head>
+
 <body>
 
+  <header class="colorb">
+    <nav class="navbar navbar-expand-lg position-relative z-3">
+      <div class="container-fluid">
+        <h1 class="navbar-brand text-black z-1" href="#">Append<span class="text-danger fs-3 ps-1">.</span></h1>
+        <button class=" navbar-toggler bg-white " type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="d-lg-flex d-none">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-black fw-bold" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-bold" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-bold" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-bold" href="./faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-bold" href="./testimonials.html">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-bold" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-bold" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="btn btn-danger d-lg-flex d-none">
+          Get Started
+        </button>
+
+      </div>
+    </nav>
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menus</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          it's a responsive postion for mobile
+        </div>
+        <div class="mt-2">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link  fw-bold" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fw-bold" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fw-bold" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fw-bold" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  fw-bold" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <div class="bred mb-5 breadcrumb d-flex align-items-center justify-content-center">
-    <a class="text-center text-white position-relative z-3 fw-bold fs-2 decono" href="./index.html">Home <i class="bi bi-arrow-right"></i><span class="breadcrumb-item active ">Portfolio</span>
+    <a class="text-center text-white position-relative z-3 fw-bold fs-2 decono" href="./index.html">Home <i
+        class="bi bi-arrow-right"></i><span class=" "> Portfolio</span>
     </a>
-</div>
-    <section id="portfolio" class="portfolio section pb-5">
+  </div>
+  <section id="portfolio" class="portfolio section pb-5">
 
-        <!-- Section Title -->
-        <div class="container text-center aos-init aos-animate" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p class="mb-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
-  
-        <div class="container">
-  
-          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-  
-            <ul class="portfolio-filters isotope-filters aos-init aos-animate d-flex gap-4 justify-content-center" data-aos="fade-up" data-aos-delay="100">
-              <li data-filter="*" class="filter-active bg-danger  rounded-pill text-center fs-6 fw-semibold py-1 mont text-white link">All</li>
-              <li data-filter=".filter-app" class="bg-danger  rounded-pill text-center fs-6 fw-semibold py-1 mont text-white link">App</li>
-              <li data-filter=".filter-product" class="bg-danger  rounded-pill text-center fs-6 fw-semibold py-1 mont text-white link">Card</li>
-              <li data-filter=".filter-branding" class="bg-danger  rounded-pill text-center fs-6 fw-semibold py-1 mont text-white link">Web</li>
-            </ul><!-- End Portfolio Filters -->
-  
-            <div class="row gy-4 isotope-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 1249.11px;">
-  
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info rounded p-2">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a href="" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div><!-- End Portfolio Item -->
-  
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 440px; top: 0px;">
-                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info rounded p-2">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div><!-- End Portfolio Item -->
-  
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 880px; top: 0px;">
-                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info rounded p-2">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div><!-- End Portfolio Item -->
-  
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 880px; top: 258px;">
-                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info rounded p-2">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div><!-- End Portfolio Item -->
-  
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 440px; top: 302.922px;">
-                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info rounded p-2">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div><!-- End Portfolio Item -->
-  
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 0px; top: 445.703px;">
-                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info rounded p-2">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div><!-- End Portfolio Item -->
-  
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 880px; top: 557.078px;">
-                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info rounded p-2 ">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div><!-- End Portfolio Item -->
-  
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product" style="position: absolute; left: 880px; top: 851.109px;">
-                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info rounded p-2">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div><!-- End Portfolio Item -->
-  
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding" style="position: absolute; left: 440px; top: 948.766px;">
-                <img src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info rounded p-2">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit</p>
-                  <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div><!-- End Portfolio Item -->
-  
-            </div><!-- End Portfolio Container -->
-  
-          </div>
-  
-        </div>
-  
-      </section>
+    
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="section-title section-title1 fw-bold">Portfolio</h2>
+      <p class="mb-5">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div>
 
-      <footer class="colorf6 p-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <p class="font-30 fw-bold mont">Append</p>
+    <div class="container">
 
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus</p>
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-                    <div class="d-flex gap-3">
-                        <div class="circle  d-flex align-items-center justify-content-center">
-                            <i class="bi bi-twitter-x text-secondary hover"></i>
-                        </div>
-                        <div class="circle d-flex align-items-center justify-content-center">
-                            <i class="bi bi-facebook text-secondary hover"></i>
-                        </div>
-                        <div class="circle  d-flex align-items-center justify-content-center">
-                            <i class="bi bi-instagram text-secondary hover"></i>
-                        </div>
-                        <div class="circle  d-flex align-items-center justify-content-center">
-                            <i class="bi bi-linkedin text-secondary hover"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div class="d-flex">
-                        <div class="col-4">
-                            <h4 class="fw-bold m-b-15">Useful Links</h4>
-                            <p class="text-secondary hover1">Home</p>
-                            <p class="text-secondary hover1">About Us</p>
-                            <p class="text-secondary hover1">Service</p>
-                            <p class="text-secondary hover1">Tearms Of Service</p>
-                            <p class="text-secondary hover1">Privacy Policy</p>
-                        </div>
-                        <div class="col-4">
-                            <h4 class="fw-bold m-b-15">Our Services</h4>
-                            <p class="text-secondary hover1">Web Design</p>
-                            <p class="text-secondary hover1">Web Development</p>
-                            <p class="text-secondary hover1">Product Management</p>
-                            <p class="text-secondary hover1">Marketing</p>
-                            <p class="text-secondary hover1">Graphic Design</p>
-                        </div>  
-                        <div class="col-4">
-                            <h4 class="fw-bold m-b-15">Contact Us</h4>
-                            <p class="text-secondary m-b-70">A108 Adam Street
+        <ul class="portfolio-filters isotope-filters  d-flex gap-4 justify-content-center"
+          data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active filter-button-group  ">
+            <p class="text-center mt-2 active pointer">All</p>
+          </li>
+          <li data-filter=".filter-app" class="filter-button-group ">
+            <p class="text-center mt-2 pointer">App</p>
+          </li>
+          <li data-filter=".filter-product" class="filter-button-group">
+            <p class="text-center mt-2 pointer">Card</p>
+          </li>
+          <li data-filter=".filter-branding" class="filter-button-group">
+            <p class="text-center mt-2 pointer">Web</p>
+          </li>
+        </ul>
 
-                                New York, NY 535022
-                                
-                                United States</p>
-                            <p class="text-secondary"><strong>Phone:</strong> +1 5589 55488 55</p>
-                            <p class="text-secondary"><strong>Email:</strong> info@example.com</p>
-                            
-                        </div>  
-                    </div>
-                </div>
+        <div class="row grid gy-4 isotope-container " data-aos="fade-up" data-aos-delay="200"
+          >
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app grid-item">
+              <img
+                src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
+                class="img-fluid" alt="">
+              <div class="portfolio-info rounded p-2">
+                <h4>App 1</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                    class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i
+                    class="bi bi-link-45deg"></i></a>
+           
             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product grid-item">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+              class="img-fluid" alt="">
+            <div class="portfolio-info rounded p-2">
+              <h4>Product 1</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
+                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding grid-item">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
+              class="img-fluid" alt="">
+            <div class="portfolio-info rounded p-2">
+              <h4>Branding 1</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
+                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app grid-item">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
+              class="img-fluid" alt="">
+            <div class="portfolio-info rounded p-2">
+              <h4>App 2</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
+                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product grid-item">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
+              class="img-fluid" alt="">
+            <div class="portfolio-info rounded p-2">
+              <h4>Product 2</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2"
+                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding grid-item">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
+              class="img-fluid" alt="">
+            <div class="portfolio-info rounded p-2">
+              <h4>Branding 2</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
+                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app grid-item">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
+              class="img-fluid" alt="">
+            <div class="portfolio-info rounded p-2 ">
+              <h4>App 3</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
+                data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product grid-item">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
+              class="img-fluid" alt="">
+            <div class="portfolio-info rounded p-2">
+              <h4>Product 3</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
+                data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding grid-item">
+            <img
+              src="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+              class="img-fluid" alt="">
+            <div class="portfolio-info rounded p-2">
+              <h4>Branding 3</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="https://bootstrapmade.com/demo/templates/Append/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
+                data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                  class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i
+                  class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+
         </div>
-    </footer>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="colorf6 p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <p class="font-30 fw-bold mont">Append</p>
+
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus</p>
+
+          <div class="d-flex gap-3">
+            <div class="circle  d-flex align-items-center justify-content-center">
+              <i class="bi bi-twitter-x text-secondary hover"></i>
+            </div>
+            <div class="circle d-flex align-items-center justify-content-center">
+              <i class="bi bi-facebook text-secondary hover"></i>
+            </div>
+            <div class="circle  d-flex align-items-center justify-content-center">
+              <i class="bi bi-instagram text-secondary hover"></i>
+            </div>
+            <div class="circle  d-flex align-items-center justify-content-center">
+              <i class="bi bi-linkedin text-secondary hover"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="d-flex">
+            <div class="col-4">
+              <h4 class="fw-bold m-b-15">Useful Links</h4>
+              <p class="text-secondary hover1">Home</p>
+              <p class="text-secondary hover1">About Us</p>
+              <p class="text-secondary hover1">Service</p>
+              <p class="text-secondary hover1">Tearms Of Service</p>
+              <p class="text-secondary hover1">Privacy Policy</p>
+            </div>
+            <div class="col-4">
+              <h4 class="fw-bold m-b-15">Our Services</h4>
+              <p class="text-secondary hover1">Web Design</p>
+              <p class="text-secondary hover1">Web Development</p>
+              <p class="text-secondary hover1">Product Management</p>
+              <p class="text-secondary hover1">Marketing</p>
+              <p class="text-secondary hover1">Graphic Design</p>
+            </div>
+            <div class="col-4">
+              <h4 class="fw-bold m-b-15">Contact Us</h4>
+              <p class="text-secondary m-b-70">A108 Adam Street
+
+                New York, NY 535022
+
+                United States</p>
+              <p class="text-secondary"><strong>Phone:</strong> +1 5589 55488 55</p>
+              <p class="text-secondary"><strong>Email:</strong> info@example.com</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/jquary.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+  <script>
+    $(document).ready(function () {
+      $('.grid').isotope({
+        // options
+        itemSelector: '.grid-item',
+      });
+
+      var $grid = $('.grid').isotope({
+        // options
+      });
+      // filter items on button click
+      $('.filter-button-group').on('click', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+      });
+
+      $(".filter-button-group p").on('click', function () {
+        $(".filter-button-group p").removeClass("active")
+        $(this).addClass("active")
+      })
+    })
+    AOS.init();
+  </script>
 </body>
+
 </html>

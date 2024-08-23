@@ -234,3 +234,48 @@ h6,
 .colorb{
     background-color: #f6f6f7;
 }
+.box-shadow{
+    box-shadow:  none !important;
+}
+.faq-item,.faq-toggle{
+    transition: .2s all linear;
+}
+.pointer{
+    cursor: pointer;
+}
+.hover7:hover{
+    color: red;
+}
+.active{
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+    width: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-title,.section-title1{
+    position: relative;
+}
+.section-title::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    background-color: red;
+    border: 10px;
+    height: 2px ;
+    margin-left: 10px;
+    top: 17px;
+}
+.section-title1::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    background-color: red;
+    border: 10px;
+    height: 2px ;
+    left: 515px;
+    top: 17px;
+}

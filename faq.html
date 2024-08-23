@@ -6,13 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>faq</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <header class="colorb">
+        <nav class="navbar navbar-expand-lg position-relative z-3">
+            <div class="container-fluid">
+                <h1 class="navbar-brand text-black z-1" href="#">Append<span class="text-danger fs-3 ps-1">.</span></h1>
+                <button class=" navbar-toggler bg-white " type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="d-lg-flex d-none">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bold" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bold" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bold" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bold" href="./faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bold" href="./testimonials.html">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bold" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black fw-bold" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-danger d-lg-flex d-none">
+                    Get Started
+                </button>
+
+            </div>
+        </nav>
+
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menus</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    it's a responsive postion for mobile
+                </div>
+                <div class="mt-2">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-bold" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div class="bred mb-5 breadcrumb d-flex align-items-center justify-content-center">
-        <a class="text-center text-white position-relative z-3 fw-bold fs-2 decono" href="./index.html">Home <i class="bi bi-arrow-right"></i><span class="breadcrumb-item active "> FAQ</span>
+        <a class="text-center text-white position-relative z-3 fw-bold fs-2 decono" href="./index.html">Home <i class="bi bi-arrow-right"></i><span class=" ">FAQ</span>
         </a>
     </div>
     <section id="faq" class="faq p-5">
@@ -32,12 +118,12 @@
                     </div>
                 </div>
 
-                <div class="col-lg-8 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-8 " data-aos="fade-up" data-aos-delay="200">
 
-                    <div class="bg-white shadow m-b-15 ">
+                    <div class="bg-white shadow m-b-15  " >
                         <div class="faq-item faq-active d-flex  justify-content-between p-3 m-0">
                             <h3 class="fs-5  fw-semibold"><span class="text-danger">1.</span> <span
-                                    class="raleway hover7 pointer">
+                                    class="mont hover7 pointer">
                                     Non consectetur a erat nam at lectus urna duis?</span></h3>
 
                             <i class="faq-toggle bi-chevron-right"></i>
@@ -50,10 +136,10 @@
                         </div>
                     </div>
 
-                    <div class="bg-white shadow m-b-15">
+                    <div class="bg-white shadow m-b-15 " >
                         <div class="faq-item faq-active d-flex  justify-content-between p-3 m-0">
                             <h3 class="fs-5  fw-semibold"><span class="text-danger">2.</span> <span
-                                    class="raleway hover7 pointer">
+                                    class="mont hover7 pointer">
                                     Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
 
                             <i class="faq-toggle bi bi-chevron-right"></i>
@@ -66,10 +152,10 @@
                         </div>
                     </div>
 
-                    <div class="bg-white shadow m-b-15">
+                    <div class="bg-white shadow m-b-15 " >
                         <div class="faq-item faq-active d-flex  justify-content-between p-3 m-0">
                             <h3 class="fs-5  fw-semibold"><span class="text-danger">3.</span> <span
-                                    class="raleway hover7 pointer">Dolor sit amet consectetur adipiscing elit
+                                    class="mont hover7 pointer">Dolor sit amet consectetur adipiscing elit
                                     pellentesque?</span></h3>
 
                             <i class="faq-toggle bi bi-chevron-right"></i>
@@ -83,10 +169,10 @@
                     </div>
 
 
-                    <div class="bg-white shadow m-b-15">
+                    <div class="bg-white shadow m-b-15 " >
                         <div class="faq-item faq-active d-flex  justify-content-between p-3 m-0">
                             <h3 class="fs-5  fw-semibold"><span class="text-danger">4.</span> <span
-                                    class="raleway hover7 pointer">
+                                    class="mont hover7 pointer">
 
                                     Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span>
                             </h3>
@@ -98,10 +184,10 @@
                         </div>
                     </div>
 
-                    <div class="bg-white shadow">
+                    <div class="bg-white shadow " >
                         <div class="faq-item faq-active d-flex  justify-content-between p-3">
                             <h3 class="fs-5  fw-semibold"><span class="text-danger">5.</span> <span
-                                    class="raleway hover7 pointer">
+                                    class="mont hover7 pointer">
                                     Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
 
                             <i class="faq-toggle bi bi-chevron-right"></i>
@@ -112,11 +198,14 @@
                     </div>
                 </div>
 
+               
             </div>
 
 
         </div>
 
+
+        
 
     </section>
 
@@ -177,6 +266,31 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/jquary.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+         $('.faq-item').on('click', function () {
+                $ans = $(this).next();
+                $ans.slideToggle();
+                $('.faq-content').not($ans).slideUp();
+
+
+
+                $icon = $(this).children('i');
+
+                $icon.toggleClass('bi-chevron-down bi-chevron-right');
+
+                $('.faq-toggle').not($icon).removeClass('bi-chevron-down')
+                $('.faq-toggle').not($icon).addClass('bi-chevron-right')
+
+            })
+            AOS.init();
+        
+    </script>
 </body>
 
 </html>
