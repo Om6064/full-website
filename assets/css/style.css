@@ -279,3 +279,12 @@ h6,
     left: 515px;
     top: 17px;
 }
+.none{
+    display: none;
+}
+.hover10:hover{
+    color:  blue !important;
+}
+.bgcolor2{
+    background-color: #eeeeee;
+}

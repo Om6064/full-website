@@ -1,0 +1,24 @@
+@media (max-width: 992px) {
+    .no-white-space{
+        white-space: wrap !important;
+    }
+    .hidden{
+        display: none !important;
+    }
+    .p-t-w-r{
+        padding-top: 50px !important;
+
+    }
+    .border-redi{
+        padding: 20px !important;
+    }
+    .section-title::after,.section-title::before{
+        display: none !important;
+    }
+}
+
+/* @media (min-width: 992px) {
+    .p-t-w-r{
+        padding-top: 0px !important;
+    }
+} */
