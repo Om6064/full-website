@@ -294,3 +294,10 @@ h6,
 .bgcolor2{
     background-color: #eeeeee;
 }
+.gs{
+    filter: grayscale(100%);
+    transition: .2s all linear;
+}
+.gs:hover{
+    filter: grayscale(0);
+}
