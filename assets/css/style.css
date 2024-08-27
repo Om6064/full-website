@@ -98,6 +98,12 @@ h6,
     width: 80px;
     border-radius: 50%;
 }
+.sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
 
 .border-redi {
     border-radius: 10px;
