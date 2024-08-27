@@ -12,6 +12,9 @@
     .border-redi{
         padding: 20px !important;
     }
+   
+}
+@media (max-width : 1629px) {
     .section-title::after,.section-title::before{
         display: none !important;
     }
